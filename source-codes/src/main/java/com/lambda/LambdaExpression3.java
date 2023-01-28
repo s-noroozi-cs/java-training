@@ -14,7 +14,7 @@ public class LambdaExpression3 {
         }
 
 
-        //request sum of ali's payments for last 3 days"
+        //request sum of ali's payments"
 
         //iterative solution
         BigDecimal sum = BigDecimal.ZERO;
