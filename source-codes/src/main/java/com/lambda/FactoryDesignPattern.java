@@ -7,7 +7,7 @@ import java.util.function.Supplier;
 public class FactoryDesignPattern {
     public static void main(String[] args) {
         Product p1 = ProductFactory.createProduct("loan");
-
+        Product p2 = ProductFactory.createProductLambda("stock");
     }
 
     class ProductFactory {
