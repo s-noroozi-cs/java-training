@@ -39,7 +39,7 @@ public class StrategyDesignPattern {
         Validator v2 = new Validator(new isLowerCaseAlphabet ());
         System.out.println(v2.validate("abc"));
 
-        //refactoring with lambda
+        //refactoring using lambda
         Validator v3 = new Validator((String s) -> s.matches(NUMBER_REG_EXP));
         System.out.println(v3.validate("123"));
         Validator v4 = new Validator((String s) -> s.matches(LOWER_CASE_ALPHABET));
