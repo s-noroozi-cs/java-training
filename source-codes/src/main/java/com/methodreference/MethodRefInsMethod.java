@@ -11,12 +11,7 @@ public class MethodRefInsMethod {
         System.out.println(msg);
     }
 
-    public static int addition(int a, int b) {
-        return (a + b);
-    }
-
     public static void main(String[] args) {
-        // 2. Method reference to an instance method of an object
         MethodRefInsMethod methodReferencesDemo = new MethodRefInsMethod();
 
         // lambda expression
