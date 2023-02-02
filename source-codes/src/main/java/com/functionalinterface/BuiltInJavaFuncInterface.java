@@ -23,7 +23,7 @@ public class BuiltInJavaFuncInterface {
 
         System.out.println("\n----------------------");
 
-        long[] longNumbers = {13l, 3l, 6l, 1l, 8l};
+        long[] longNumbers = {13L, 3L, 6L, 1L, 8L};
         LongConsumer longConsumers = l -> System.out.print(l + " ");
         Arrays.stream(longNumbers).forEach(longConsumers);
 
@@ -64,8 +64,7 @@ public class BuiltInJavaFuncInterface {
 
         //First example
         listOfPerson.forEach((person) -> {
-            System.out.println("Person name: %s ,age: %d"
-                    .formatted(person.name(),person.age));
+            System.out.printf("Person name: %s ,age: %d%n", person.name(),person.age);
         });
 
         System.out.println("----------------------");
@@ -73,8 +72,7 @@ public class BuiltInJavaFuncInterface {
 
         // Second example
         Consumer<Person> consumer = (person) -> {
-            System.out.println("Person name: %s ,age: %d"
-                    .formatted(person.name(),person.age));
+            System.out.printf("Person name: %s ,age: %d%n", person.name(),person.age);
         };
         listOfPerson.forEach(consumer);
 
