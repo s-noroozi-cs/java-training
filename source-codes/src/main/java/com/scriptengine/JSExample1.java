@@ -4,7 +4,7 @@ import javax.script.*;
 import java.util.List;
 import java.util.Map;
 
-public class JavaScriptEngineExample {
+public class JSExample1 {
     public record Person(String name, int age) {
     }
 
