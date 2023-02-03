@@ -4,8 +4,20 @@ import javax.script.Invocable;
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 import java.util.List;
+import java.util.Map;
 
 public class JSExample2 {
+    static Map usingJavaHashMap() throws Exception {
+        ScriptEngine engine = new ScriptEngineManager().getEngineByName("nashorn");
+        return (Map) engine.eval(
+                """
+                        var HashMap = Java.type('java.util.HashMap');
+                        var map = new HashMap();
+                        map.put('hello', 'world');
+                        map;
+                        """);
+    }
+
     static double averageAge(List<JSExample1.Person> persons) throws Exception {
         ScriptEngine engine = new ScriptEngineManager().getEngineByName("nashorn");
         engine.eval(
@@ -24,7 +36,9 @@ public class JSExample2 {
         Invocable invocable = (Invocable) engine;
         return (double)invocable.invokeFunction("averageAge", persons);
     }
+
     public static void main(String[] args) throws Exception {
+        System.out.println(usingJavaHashMap());
 
         System.out.println("average person age: " + averageAge(List.of(
                 new JSExample1.Person("a", 20),
