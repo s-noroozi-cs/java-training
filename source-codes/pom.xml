@@ -26,6 +26,21 @@
             <version>72.1</version>
         </dependency>
 
+        <!--
+        java 8 introduce nashorn javascript engine
+        it was deprecated in java 11 and does not exist anymore in 17
+            due to exclude from core
+            and adding it using external dependency
+
+        -->
+        <dependency>
+            <groupId>org.openjdk.nashorn</groupId>
+            <artifactId>nashorn-core</artifactId>
+            <version>15.4</version>
+        </dependency>
+
+
+
 
     </dependencies>
 
