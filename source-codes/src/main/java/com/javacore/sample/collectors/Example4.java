@@ -14,7 +14,7 @@ public class Example4 {
         programmingLanguages.add("Python");
         programmingLanguages.add("Perl");
         programmingLanguages.add("Ruby");
-        
+
         String joined = programmingLanguages.stream().collect(Collectors.joining(","));
 
         System.out.printf("Joined string: %s", joined);

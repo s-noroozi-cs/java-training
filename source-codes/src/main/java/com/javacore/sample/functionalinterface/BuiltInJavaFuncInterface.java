@@ -1,13 +1,13 @@
 package com.javacore.sample.functionalinterface;
 
+import com.javacore.sample.model.Person;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.*;
 
 public class BuiltInJavaFuncInterface {
-    record Person(String name, int age) {
-    }
 
     public static void main(String[] args) {
 
@@ -64,7 +64,7 @@ public class BuiltInJavaFuncInterface {
 
         //First example
         listOfPerson.forEach((person) -> {
-            System.out.printf("Person name: %s ,age: %d%n", person.name(),person.age);
+            System.out.printf("Person name: %s ,age: %d%n", person.name(),person.age());
         });
 
         System.out.println("----------------------");
@@ -72,7 +72,7 @@ public class BuiltInJavaFuncInterface {
 
         // Second example
         Consumer<Person> consumer = (person) -> {
-            System.out.printf("Person name: %s ,age: %d%n", person.name(),person.age);
+            System.out.printf("Person name: %s ,age: %d%n", person.name(),person.age());
         };
         listOfPerson.forEach(consumer);
 

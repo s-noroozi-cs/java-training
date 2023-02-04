@@ -1,13 +1,13 @@
 package com.javacore.sample.lambda;
 
+import com.javacore.sample.model.Person;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
 public class ComparatorExample {
-    record Person(String name, int age) {
-    }
 
     public static void main(String[] args) {
 

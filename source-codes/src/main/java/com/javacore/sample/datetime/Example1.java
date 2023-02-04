@@ -1,6 +1,5 @@
 package com.javacore.sample.datetime;
 
-import java.time.Clock;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneId;

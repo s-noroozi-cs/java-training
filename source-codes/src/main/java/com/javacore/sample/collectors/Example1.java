@@ -1,17 +1,14 @@
 package com.javacore.sample.collectors;
 
-import java.util.ArrayList;
+import com.javacore.sample.model.Product;
+
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
 public class Example1 {
-    record Product(int id, String name, float price) {
-    }
-
-
     public static void main(String[] args) {
-        List<Product> productsList = new ArrayList();
+        List<Product> productsList = Product.getSampleProducts();
         productsList.add(new Product(1, "HP Laptop", 25000f));
         productsList.add(new Product(2, "Dell Laptop", 30000f));
         productsList.add(new Product(3, "Lenevo Laptop", 28000f));

@@ -1,7 +1,6 @@
 package com.javacore.sample.datetime;
 
 import com.ibm.icu.text.DateFormat;
-import com.ibm.icu.text.SimpleDateFormat;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;

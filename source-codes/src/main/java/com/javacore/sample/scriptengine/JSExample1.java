@@ -4,8 +4,6 @@ import javax.script.*;
 import java.util.List;
 
 public class JSExample1 {
-    public record Person(String name, int age) {
-    }
 
     static void checkDefaultScriptEngines() {
         ScriptEngineManager sem = new ScriptEngineManager();
