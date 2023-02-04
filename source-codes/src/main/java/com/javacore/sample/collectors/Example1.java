@@ -31,17 +31,6 @@ public class Example1 {
                         .map(Product::name)
                         .collect(Collectors.toSet());
         System.out.println(productNameSet);
-
-        Double priceSums = productsList.stream().collect(Collectors.summingDouble(Product::price));
-        System.out.println("Sum of prices: " + priceSums);
-
-        Double priceAverage = productsList.stream().collect(Collectors.averagingDouble(Product::price));
-        System.out.println("Average of prices: " + priceAverage);
-
-        Long numberOfElements = productsList.stream().collect(Collectors.counting());
-        System.out.println("Total elements : " + numberOfElements);
-
-
     }
 
 }

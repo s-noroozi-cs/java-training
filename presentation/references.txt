@@ -1,6 +1,8 @@
 https://www.javatpoint.com/java-8-features
 https://www.sourcecodeexamples.net/p/java-streams.html
 
+https://www.javatpoint.com/java-8-collectors
+
 https://developer.oracle.com/learn/technical-articles/nashorn-javascript-part1
 https://developer.oracle.com/learn/technical-articles/nashorn-javascript-part2
 https://developer.oracle.com/learn/technical-articles/nashorn-javascript-part3
