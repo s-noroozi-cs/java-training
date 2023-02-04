@@ -1,0 +1,3 @@
+https://developer.oracle.com/learn/technical-articles/nashorn-javascript-part1
+https://developer.oracle.com/learn/technical-articles/nashorn-javascript-part2
+https://developer.oracle.com/learn/technical-articles/nashorn-javascript-part3

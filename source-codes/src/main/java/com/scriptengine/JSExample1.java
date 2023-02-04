@@ -47,7 +47,7 @@ public class JSExample1 {
         Invocable invocable = (Invocable) engine;
         return String.valueOf(invocable.invokeFunction("addFunction", a, b));
     }
-    
+
     public static void main(String[] args) throws Exception {
         checkDefaultScriptEngines();
         sayHello("Nashorn JavaScript Engine");
