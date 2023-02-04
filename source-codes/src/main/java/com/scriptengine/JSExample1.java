@@ -2,7 +2,6 @@ package com.scriptengine;
 
 import javax.script.*;
 import java.util.List;
-import java.util.Map;
 
 public class JSExample1 {
     public record Person(String name, int age) {
@@ -48,11 +47,7 @@ public class JSExample1 {
         Invocable invocable = (Invocable) engine;
         return String.valueOf(invocable.invokeFunction("addFunction", a, b));
     }
-
-
-
-
-
+    
     public static void main(String[] args) throws Exception {
         checkDefaultScriptEngines();
         sayHello("Nashorn JavaScript Engine");
