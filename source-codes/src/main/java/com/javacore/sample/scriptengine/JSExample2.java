@@ -1,5 +1,7 @@
 package com.javacore.sample.scriptengine;
 
+import com.javacore.sample.model.Person;
+
 import javax.script.Invocable;
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
@@ -18,7 +20,7 @@ public class JSExample2 {
                         """);
     }
 
-    static double averageAge(List<JSExample1.Person> persons) throws Exception {
+    static double averageAge(List<Person> persons) throws Exception {
         ScriptEngine engine = new ScriptEngineManager().getEngineByName("nashorn");
         engine.eval(
                 """
@@ -41,10 +43,10 @@ public class JSExample2 {
         System.out.println(usingJavaHashMap());
 
         System.out.println("average person age: " + averageAge(List.of(
-                new JSExample1.Person("a", 20),
-                new JSExample1.Person("b", 25),
-                new JSExample1.Person("c", 30),
-                new JSExample1.Person("d", 35)
+                new Person("a", 20),
+                new Person("b", 25),
+                new Person("c", 30),
+                new Person("d", 35)
         )));
     }
 }
