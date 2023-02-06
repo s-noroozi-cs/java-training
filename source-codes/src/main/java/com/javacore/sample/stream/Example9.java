@@ -30,7 +30,5 @@ public class Example9 {
                 stringList.stream()
                         .filter(v -> v.startsWith("Ruby"))
                         .findAny());
-
-
     }
 }
