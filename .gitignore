@@ -33,5 +33,8 @@ build/
 
 ### VS Code ###
 .vscode/
+<<<<<<< HEAD
 
 presentation/*.key
+=======
+>>>>>>> parent of 807f294 (add slides)
