@@ -52,7 +52,10 @@ jlink
 14. show original size of your current jre
     du -h $JAVA_HOME | tail -n1
 
-15. 
-
-
-
+15. Custom, modular Java runtime images are powerful.
+    The goals for creating custom JREs are clear:
+        they save on memory,
+        improve performance,
+        and also enhance security and maintainability.
+    Lightweight custom JREs also enable us to create,
+    scalable applications for small devices.
