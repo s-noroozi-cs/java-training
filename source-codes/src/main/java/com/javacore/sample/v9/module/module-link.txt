@@ -1,0 +1,58 @@
+jlink
+    is a tool that generates a custom Java runtime image that
+    contains only the platform modules that are required for a given application.
+    Such a runtime image acts exactly like the JRE but contains only the modules
+    we picked and the dependencies they need to function.
+    The concept of modular runtime images was introduced in JEP 220.
+
+
+1. create directory with name "test"
+
+2. change directory to test
+
+3. create file with name "module-info.java"
+
+4. add following content
+    module test {
+        requires java.logging;
+    }
+
+5. create directory with name "com"
+
+6. change current directory to "com"
+
+7. create file with name "HelloWorld.java"
+
+8. add following content
+        package com;
+        import java.util.logging.Logger;
+        public class HelloWorld {
+            private static final Logger LOG = Logger.getLogger(HelloWorld.class.getName());
+            public static void main(String[] args) {
+                LOG.info("Hello World!");
+            }
+        }
+
+9. change directory to parent directory - in our scenario it's "test"
+
+10. execute following commands
+    javac -d out module-info.java
+    javac -d out --module-path out com/HelloWorld.java
+    java --module-path out --module test/com.HelloWorld
+
+11. using jdeps command to get the dependent modules used in the application:
+    jdeps --module-path out -s --module test
+
+12. create a custom JRE for our program:
+    jlink --module-path $JAVA_HOME/jmods:out --add-modules test --output my-custom-jre
+
+13. show size of your custom jre
+    du -h my-custom-jre | tail -n1
+
+14. show original size of your current jre
+    du -h $JAVA_HOME | tail -n1
+
+15. 
+
+
+
