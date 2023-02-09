@@ -5,7 +5,8 @@ https://www.sourcecodeexamples.net/p/java-streams.html
 https://www.sourcecodeexamples.net/2021/06/java-8-collectorsgroupingby-example.html
 
 https://www.baeldung.com/java-base64-encode-and-decode
-
+https://www.baeldung.com/java-9-modularity
+https://www.baeldung.com/jlink
 
 https://developer.oracle.com/learn/technical-articles/nashorn-javascript-part1
 https://developer.oracle.com/learn/technical-articles/nashorn-javascript-part2
