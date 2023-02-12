@@ -15,7 +15,7 @@ public class Example5 {
         }
 
         // with Optional
-        Optional<String> optionalStr = Optional.of(result);
+        Optional<String> optionalStr = Optional.ofNullable(result);
         optionalStr
                 .filter(s -> s.contains("abc"))
                 .ifPresent(System.out::println);
@@ -31,7 +31,7 @@ public class Example5 {
         }
 
         // with Optional
-        optionalStr = Optional.of(result);
+        optionalStr = Optional.ofNullable(result);
         optionalStr
                 .filter(res -> res.contains("abc"))
                 .map(String::trim)

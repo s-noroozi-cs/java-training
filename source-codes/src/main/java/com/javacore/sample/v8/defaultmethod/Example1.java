@@ -1,8 +1,8 @@
 package com.javacore.sample.v8.defaultmethod;
 
+@FunctionalInterface
 interface InterfaceA {
     void square(int a);
-
     default void defaultMethod() {
         System.out.println("Default Method Executed");
     }

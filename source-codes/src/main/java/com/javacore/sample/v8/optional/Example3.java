@@ -8,7 +8,7 @@ public class Example3 {
 
         for (String email : new String[]{"s.noroozi.cs@gmail.com", null}) {
             Optional<String> stringOptional = Optional.ofNullable(email);
-            String defaultOptional = stringOptional.orElse("default@gmail.com");
+            String defaultOptional = stringOptional.orElse(new String("default@gmail.com"));
             System.out.println(defaultOptional);
         }
 

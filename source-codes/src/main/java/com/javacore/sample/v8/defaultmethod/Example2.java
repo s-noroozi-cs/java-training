@@ -12,7 +12,17 @@ interface Interface2 {
     }
 }
 
-public class Example2 implements Interface1,Interface2{
+public class Example2 implements Interface1
+        ,Interface2
+{
+
+    public static void main(String[] args){
+        new Example2().show();
+    }
+
+//    public void show(){
+//        System.out.println("custom");
+//    }
 
 
     @Override
@@ -21,5 +31,6 @@ public class Example2 implements Interface1,Interface2{
 
         Interface1.super.show();
         Interface2.super.show();
+        System.out.println("custom");
     }
 }

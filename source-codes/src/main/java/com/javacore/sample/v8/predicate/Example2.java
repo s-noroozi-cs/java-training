@@ -7,6 +7,7 @@ public class Example2 {
         Predicate<Integer> greaterThanTen = (i) -> i > 10;
 
         Predicate<Integer> lowerThanTwenty = (i) -> i < 20;
+
         boolean result = greaterThanTen
                 .and(lowerThanTwenty)
                 .test(15);
