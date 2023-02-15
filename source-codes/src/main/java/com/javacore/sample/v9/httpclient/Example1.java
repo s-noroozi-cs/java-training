@@ -7,7 +7,6 @@ import java.net.http.HttpResponse;
 
 public class Example1 {
     public static void main(String[] args) throws Exception {
-        java.util.Arrays.toString(new int[]{1,2,3})
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(new URI("https://www.google.com"))
                 .GET()
