@@ -1,0 +1,50 @@
+=== Working with variables ===
+
+When we do not assign the result of an expression to variable,
+a scratch variable is created so that the output of expression can be used later.
+These scratch variables are created by name of $1, $2, $3 and so on.
+Let's have a look at the following examples to understand it better.
+
+jshell> 1+2
+$1 ==> 3
+
+jshell> 2+5
+$2 ==> 7
+
+jshell> System.out.println("sum of the two scratch variables is:"+($1+$2))
+sum of the two scratch variables is:10
+
+jshell> $1+$2
+$4 ==> 10
+
+=== JShell – variables ===
+
+We can also name the variables in JShell,
+just like we do in the actual java program.
+
+jshell> int var = 100
+var ==> 100
+
+jshell> int num = var - 90
+num ==> 10
+
+jshell> System.out.println(num)
+10
+
+
+Note: We can also change the type of the variable, as you can see in the blew example
+that we have changed the type of variable num from int to String.
+Doing this would change the value of the variable to the default value
+of the changed data type,
+in our example we have change the num from int to String
+so that value of num is changed from 10 to null.
+
+This is especially useful when you do not want to create unnecessary variables
+and reuse the ones which you have already created.
+
+jshell> String num
+num ==> null
+
+jshell> System.out.println(num)
+null
+

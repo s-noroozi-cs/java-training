@@ -1,0 +1,14 @@
+=== Methods ===
+To test method business logic, create an method and get result immediately.
+See, the following example.
+
+jshell> void show(){
+   ...> System.out.println("This is show method");
+   ...> }
+|  created method show()
+
+
+=== Calling method ===
+
+jshell> show();
+This is show method

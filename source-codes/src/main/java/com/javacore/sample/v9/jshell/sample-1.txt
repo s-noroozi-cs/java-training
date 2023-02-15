@@ -1,0 +1,25 @@
+if your java home env. variable was set correctly, then enter "jshell"
+
+to exit type "/exit" command
+
+$ jshell
+|  Welcome to JShell -- Version 17.0.2
+|  For an introduction type: /help intro
+
+jshell> System.out.println("Hello everyone")
+Hello everyone
+
+jshell> /save /tmp/jshell-commands.txt
+
+jshell> /exit
+|  Goodbye
+
+$cat /tmp/jshell-commands.txt
+System.out.println("Hello everyone")
+
+$ jshell
+|  Welcome to JShell -- Version 17.0.2
+|  For an introduction type: /help intro
+
+jshell> /open /tmp/jshell-commands.txt
+Hello everyone

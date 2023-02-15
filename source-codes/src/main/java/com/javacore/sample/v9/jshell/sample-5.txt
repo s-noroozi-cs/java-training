@@ -1,0 +1,23 @@
+=== Command /vars to show variables. ===
+jshell> /vars
+|    int $1 = 5
+|    int $2 = 5
+|    int $4 = 25
+
+=== To get all written source code, use /list ===
+jshell> /list
+
+   1 : 2+3
+   2 : 10-5
+   3 : $1
+   4 : 2+(5*4+(2+1))
+   5 : void show(){
+       System.out.println("This is show method");
+       }
+   6 : show();
+   7 : class Hello{
+       void show(){
+       System.out.println("This is show method");
+       }
+       }
+   8 : new Hello().show();

@@ -1,0 +1,10 @@
+=== Class ===
+jshell> class Hello{
+   ...> void show(){
+   ...> System.out.println("This is show method");
+   ...> }
+   ...> }
+|  created class Hello
+
+jshell> new Hello().show();
+This is show method
