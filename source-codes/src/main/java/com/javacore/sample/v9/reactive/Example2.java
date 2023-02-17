@@ -21,6 +21,7 @@ public class Example2 {
 
         @Override
         public void onNext(T item) {
+            //after process, request another item
             System.out.println("Got : " + item);
             consumedElements.add(item);
             subscription.request(1);
