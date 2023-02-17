@@ -61,6 +61,7 @@ public class Example3 {
         @Override
         public void onError(Throwable throwable) {
             throwable.printStackTrace();
+
         }
 
         @Override
@@ -76,7 +77,7 @@ public class Example3 {
         TransformProcessor<String, Integer> transformProcessor
                 = new TransformProcessor<>(Integer::parseInt);
 
-        List<String> items = List.of("1", "2", "3");
+        List<String> items = List.of("1","2", "3");
 
         publisher.subscribe(transformProcessor);
         transformProcessor.subscribe(subscriber);
