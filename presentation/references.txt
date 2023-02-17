@@ -11,3 +11,12 @@ https://www.baeldung.com/jlink
 https://developer.oracle.com/learn/technical-articles/nashorn-javascript-part1
 https://developer.oracle.com/learn/technical-articles/nashorn-javascript-part2
 https://developer.oracle.com/learn/technical-articles/nashorn-javascript-part3
+
+https://howtodoinjava.com/java9/java9-new-features-enhancements/
+https://www.programinjava.com/2018/03/java-9-features-with-examples.html
+https://www.arika.dev/posts/java-9-new-features-with-example/
+https://www.javatpoint.com/java-9-features
+https://beginnersbook.com/2018/05/java-9-anonymous-inner-classes-and-diamond-operator/
+https://beginnersbook.com/2018/04/java-9-features-with-examples/
+https://www.baeldung.com/new-java-9
+https://www.geeksforgeeks.org/java-9-features-with-examples/
