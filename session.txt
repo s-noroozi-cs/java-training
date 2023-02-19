@@ -1,3 +1,5 @@
-session 01	2.0 hours		8.0 - 10.5		sunday 05 feb 2023	slide: 5
+session 01	2.0 hours		08.0 - 10.5		sunday 05 feb 2023	slide: 05
 
-session 02  2.5 hours		8.0 - 10.5		sunday 12 feb 2023  slide: 11
+session 02  2.5 hours		08.0 - 10.5		sunday 12 feb 2023  slide: 11
+
+session 03	1.5 hours		16.5 - 18.0 	sunday 19 feb 2023  slide: 16
