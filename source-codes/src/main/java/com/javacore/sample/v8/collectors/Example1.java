@@ -28,6 +28,17 @@ public class Example1 {
                         .map(Product::name)
                         .collect(Collectors.toSet());
         System.out.println(productNameSet);
+
+
+        List<String> productNameList =
+                productsList
+                        .stream()
+                        .map(Product::name)
+                        .map(String::trim)
+                        .distinct()
+                        .collect(Collectors.toList());
+        System.out.println(productNameList);
+
     }
 
 }
