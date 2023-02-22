@@ -33,13 +33,4 @@ public class Example4 {
     private static String formatIbmIcu(Locale locale, String pattern, Date date) {
         return new com.ibm.icu.text.SimpleDateFormat(pattern, locale).format(date);
     }
-//
-//    private static String convert(String data){
-//        StringBuilder sb = new StringBuilder();
-//        for(char ch : data.toCharArray()){
-//            switch (ch){
-//                case
-//            }
-//        }
-//    }
 }
