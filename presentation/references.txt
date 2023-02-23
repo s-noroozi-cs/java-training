@@ -20,3 +20,5 @@ https://beginnersbook.com/2018/05/java-9-anonymous-inner-classes-and-diamond-ope
 https://beginnersbook.com/2018/04/java-9-features-with-examples/
 https://www.baeldung.com/new-java-9
 https://www.geeksforgeeks.org/java-9-features-with-examples/
+
+https://www.geeksforgeeks.org/java-11-features-and-comparison/
