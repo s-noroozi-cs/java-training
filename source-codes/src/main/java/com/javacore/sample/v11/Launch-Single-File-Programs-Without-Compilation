@@ -1,0 +1,18 @@
+Traditionally, for every program that we’d like to execute,
+we need to first compile it.
+It seems unnecessarily lengthy process for small programs for testing purposes.
+
+Java 11 changes it and now we can execute Java source code contained in a single file
+without the need to compile it first.
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+}
+
+To execute above class, run it directly with java command.
+
+$ java HelloWorld.java
+
+Hello World!
