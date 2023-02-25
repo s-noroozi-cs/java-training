@@ -22,3 +22,5 @@ https://www.baeldung.com/new-java-9
 https://www.geeksforgeeks.org/java-9-features-with-examples/
 
 https://www.geeksforgeeks.org/java-11-features-and-comparison/
+
+https://www.baeldung.com/java-12-new-features
