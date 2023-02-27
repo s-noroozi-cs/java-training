@@ -16,5 +16,13 @@ public class Example1 {
                 .send(request, HttpResponse.BodyHandlers.ofString());
 
         System.out.println(response.toString());
+        System.out.println("""
+                status code: %s
+                body: %s
+                headers: %s
+                """
+                .formatted(response.statusCode(),response.body(),
+                        response.headers().map())
+        );
     }
 }

@@ -1,7 +1,5 @@
 package com.javacore.sample.v9.httpclient;
 
-import java.net.InetSocketAddress;
-import java.net.ProxySelector;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;

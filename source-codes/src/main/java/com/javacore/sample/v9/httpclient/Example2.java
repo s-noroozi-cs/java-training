@@ -10,7 +10,8 @@ import java.net.http.HttpResponse;
 public class Example2 {
     public static void main(String[] args) throws Exception {
         HttpClient client = HttpClient.newBuilder()
-                .proxy(ProxySelector.of(new InetSocketAddress("my-internal-proxy", 8080)))
+                .proxy(ProxySelector.of(
+                        new InetSocketAddress("my-internal-proxy", 8080)))
                 .build();
 
         HttpRequest request = HttpRequest.newBuilder()
