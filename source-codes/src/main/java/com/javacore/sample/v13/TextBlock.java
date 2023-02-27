@@ -15,5 +15,23 @@ public class TextBlock {
                 ORDER BY lastName, firstName""";
 
         System.out.println("\nsql: " + sql);
+
+
+        String json = ""
+                + "{\n"
+                + "language: \"Java\",\n"
+                + "version: \"13\",\n"
+                + "description: \"is here\"\n"
+                + "}\n";
+        System.out.println("\njson: " + json);
+
+        json = """
+			{
+				language: "Java",
+				version: "13",
+				description: "is here"
+			}
+			""";
+        System.out.println("\njson: " + json);
     }
 }
