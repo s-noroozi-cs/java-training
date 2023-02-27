@@ -6,6 +6,6 @@ session 03	1.5 hours		16.5 - 18.0 	sun 19 feb 2023	slide: 16
 
 session 04	1.5 hours		16.0 - 17.5 	wed 22 feb 2023	slide: 23
 
-session 05  2.5 hours		16.0 - 18.0		mon 27 feb 2023 slide: 29
+session 05  2.5 hours		16.0 - 18.5		mon 27 feb 2023 slide: 29
 
 total: 12.0
