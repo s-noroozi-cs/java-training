@@ -20,7 +20,7 @@ public class Example1 {
             List<Integer> copyList = List.copyOf(someIntList);
             copyList.add(4);
         } catch (Throwable ex) {
-            System.out.println(ex.getMessage());
+            ex.printStackTrace();
         }
     }
 }
